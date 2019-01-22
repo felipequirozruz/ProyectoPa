@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Student
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding id="page3">
+  <ion-card id="student-card23">
+    <ion-list>
+      <ion-item color="none" id="student-list-item15">
+        <ion-avatar item-left>
+          <img src="assets/img/2kqSb1lHQNeEciAinvEV_alumno.png" />
+        </ion-avatar>
+        <h2>
+          {{loginProvider.firstname}} {{loginProvider.lastname}}
+        </h2>
+      </ion-item>
+      <div style="display: block;">
+          <canvas baseChart
+            [data]='doughnutChartData'
+            [labels]='doughnutChartLabels'
+            [chartType]='doughnutChartType'>
+            
+
+          </canvas>
+      </div>
+      <ion-item color="positive" id="student-list-item11">
+        <ion-icon name="stats" item-left></ion-icon>
+        Estadistico Grafico
+      </ion-item>
+      <ion-item color="balanced" id="student-list-item16">
+        <ion-icon name="checkmark-circle" item-left></ion-icon>
+        Aprobados
+      </ion-item>
+      <ion-item color="assertive" id="student-list-item49">
+        <ion-icon name="close-circle" item-left></ion-icon>
+        Reprobados
+      </ion-item>
+      <ion-item color="positive" id="student-list-item40">
+        <ion-avatar item-left>
+          <img src="assets/img/RMkYKGeIQ6mXkPulGXyd_promedio.png" />
+        </ion-avatar>
+        <h2>
+          Ramos Cursados
+        </h2>
+      </ion-item>
+      <ion-item color="positive" id="student-list-item61">
+        <ion-icon name="stats" item-left></ion-icon>
+        Estadisticos Alumno
+      </ion-item>
+      <ion-item color="balanced" id="student-list-item62">
+        <ion-avatar item-left>
+          <img src="assets/img/RMkYKGeIQ6mXkPulGXyd_promedio.png" />
+        </ion-avatar>
+        <h2>
+          Promedio
+        </h2>
+      </ion-item>
+      <ion-item color="energized" id="student-list-item34">
+        <ion-avatar item-left>
+          <img src="assets/img/AaBLM2ApTUeK8sFK4Jeh_cVqQEs7SLua0gJyDhtUe_image.png" />
+        </ion-avatar>
+        <h2>
+          Desviacion Estandar
+        </h2>
+      </ion-item>
+      <ion-item color="assertive" id="student-list-item33">
+        <ion-avatar item-left>
+          <img src="assets/img/UolrDhoiTIu1XqENykzN_ranking.png" />
+        </ion-avatar>
+        <h2>
+          Ranking Generación 2018
+        </h2>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>
